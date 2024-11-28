@@ -1,0 +1,162 @@
+@media screen and (max-width: 990px) {
+  .app {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto repeat(3, 15rem) auto repeat(2, 15rem);
+  }
+
+  .summary,
+  .logout-timer,
+  .balance,
+  .movements {
+    grid-column: 1 / span 2;
+  }
+
+  .movements {
+    grid-row: 2 / span 3;
+  }
+
+  .summary {
+    grid-column: 1 / span 2;
+  }
+
+  .btn--sort {
+    grid-column: 1 / span 2;
+  }
+
+  .operation--close {
+    grid-column: 1 / span 2;
+    width: 60%;
+    margin: auto;
+  }
+
+  .logout-timer {
+    margin-bottom: 2rem;
+  }
+
+
+}
+
+@media screen and (max-width: 768px){
+  nav {
+    padding: 0;
+  }
+  .balance__value {
+    font-size: 4rem;
+  }
+
+  .operation {
+    padding: 4rem 2rem;
+    
+  }
+
+
+
+  
+}
+
+@media screen and (max-width: 650px){
+  .operation {
+    grid-column: 1 / span 2;
+    row-gap: 1.6rem;
+  }
+
+  .operation--close {
+    width: 100%;
+  }
+
+  .operation ,
+   .operation--close {
+    width: 80%;
+    margin: auto;
+  }
+
+  .form__btn {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .balance__value {
+    font-size: 3rem;
+  }
+
+  .balance__label {
+    font-size: 1.6rem;
+  }
+
+  .balance__date {
+    font-size: 1.2rem;
+  }
+
+  .summary {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    row-gap: 1rem;
+  }
+
+  .summary__label {
+    font-size: 1rem;
+
+  }
+
+  .btn--sort {
+    align-self: flex-end;
+  }
+
+}
+
+
+
+
+
+@media screen and (max-width: 430px) {
+.logo {
+  display: none;
+}
+
+.welcome {
+  margin-bottom: 2rem;
+}
+
+ .app {
+  grid-template-rows: auto repeat(3, 14rem) auto repeat(2, auto);
+ }
+  .operation ,
+  .operation--close {
+   width: 100%;
+   margin: auto;
+ }
+
+ .operation {
+  row-gap: 1.3rem;
+ }
+
+ .movements__row {
+  padding: 1.6rem 1rem;
+ }
+
+ .balance__value {
+  font-size: 2.3rem;
+ }
+
+ .balance__label {
+  font-size: 1.3rem;
+ }
+ .balance__date {
+  font-size: 1rem;
+ }
+
+ .movements__value {
+  font-size: 1.4rem;
+ }
+
+ .movements__date {
+  font-size: 0.9rem;
+ }
+
+ .movements__type {
+  font-size: 0.9rem;
+  padding: 0.1rem 0.7rem;
+ }
+}
